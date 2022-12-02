@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+
+
+/* HEADER */
+.main-page {
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .main-header h1 {
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: antiquewhite;
+    padding: 2rem 4rem;
+}
+
+.header nav.navbar {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.header .navbar ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.header .navbar ul a:hover {
+    border-bottom: 1px solid rgb(236, 47, 151);
+    color: rgb(236, 47, 151);
+
+}
+
+.header .navbar ul a {
+    text-decoration: none;
+    color: rgb(163, 151, 135);
+    padding: 1rem 2rem;
+    transition: all 1s linear;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.icon .btn-rezervations button {
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+    font-size: 1rem;
+    background-color: rgb(241, 68, 204);
+
+}
+
+.icon .btn-rezervations button:hover {
+    background-color: rgba(238, 96, 174, 0.623);
+    transform: scale(1.05);
+    color: rgb(163, 151, 135);
+    ;
+}
+
+.icons-items ul {
+    list-style-type: none;
+    color: rgb(163, 151, 135);
+    ;
+    padding: .5rem 1rem;
+    display: flex;
+    gap: 2rem;
+
+}
+
+/* CONTENT */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.content-title :first-child {
+    color: rgb(60, 172, 60);
+    font-size: 2rem;
+
+}
+
+.content-title :nth-child(2) {
+    color: rgb(226, 216, 202);
+    font-size: 6rem;
+    font-weight: bolder;
+
+}
+
+.content-title :last-child {
+    color: rgb(226, 216, 202);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+}
+
+.content-btn button {
+    padding: 1rem 2rem;
+    border: 1px solid rgba(240, 164, 206, 0.404);
+    border-radius: 4rem;
+    font-size: 1rem;
+    background-color: rgba(240, 164, 206, 0.404);
+    margin: 1rem 2rem;
+    width: 25%;
+
+}
+
+.content-btn button:last-child {
+    background-color: rgba(0, 255, 255, 0);
+    border: 2px solid rgba(240, 164, 206, 0.404);
+    color: rgb(163, 151, 135);
+    ;
+    font-size: 1.5rem;
+}
+
+.content-btn button:last-child:hover {
+    background-color: rgb(236, 55, 176);
+    color: rgb(240, 204, 224);
+}
+
+.content-btn button:first-child {
+    background-color: rgb(241, 68, 204);
+    border: 2px solid rgba(240, 164, 206, 0.404);
+    color: rgb(163, 151, 135);
+    ;
+    font-size: 1.5rem;
+}
+
+.content-btn button:first-child:hover {
+    background-color: rgb(163, 29, 118);
+    color: rgb(240, 204, 224);
+}
