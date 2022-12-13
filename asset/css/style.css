@@ -5,10 +5,14 @@
     font-family: 'Lora', serif;
 }
 
+body {
+    width: 100%;
+}
+
 
 /* HEADER */
 .main-page {
-    background-image: url(../img/background.jpg);
+    background-image: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,7 +55,7 @@
 
 .header .navbar ul a {
     text-decoration: none;
-    color: rgb(163, 151, 135);
+    color: antiquewhite;
     padding: 1rem 2rem;
     transition: all 1s linear;
 }
@@ -74,19 +78,31 @@
 .icon .btn-rezervations button:hover {
     background-color: rgba(238, 96, 174, 0.623);
     transform: scale(1.05);
-    color: rgb(163, 151, 135);
-    ;
+    color: antiquewhite;
 }
 
 .icons-items ul {
     list-style-type: none;
-    color: rgb(163, 151, 135);
+    color: antiquewhite;
     ;
     padding: .5rem 1rem;
     display: flex;
     gap: 2rem;
 
 }
+
+.fa-facebook:hover {
+    color: #18ACFE;
+}
+
+.fa-instagram:hover {
+    color: #B329A9;
+}
+
+.fa-youtube:hover {
+    color: #FF0000;
+}
+
 
 /* CONTENT */
 
@@ -106,14 +122,14 @@
 }
 
 .content-title :nth-child(2) {
-    color: rgb(226, 216, 202);
+    color: antiquewhite;
     font-size: 6rem;
     font-weight: bolder;
 
 }
 
 .content-title :last-child {
-    color: rgb(226, 216, 202);
+    color: antiquewhite;
     font-size: 1.5rem;
     padding: 1rem 2rem;
 }
@@ -132,8 +148,7 @@
 .content-btn button:last-child {
     background-color: rgba(0, 255, 255, 0);
     border: 2px solid rgba(240, 164, 206, 0.404);
-    color: rgb(163, 151, 135);
-    ;
+    color: antiquewhite;
     font-size: 1.5rem;
 }
 
@@ -144,8 +159,8 @@
 
 .content-btn button:first-child {
     background-color: rgb(241, 68, 204);
-    border: 2px solid rgba(240, 164, 206, 0.404);
-    color: rgb(163, 151, 135);
+    border: 2px solid antiquewhite;
+    color: antiquewhite;
     ;
     font-size: 1.5rem;
 }
@@ -153,4 +168,170 @@
 .content-btn button:first-child:hover {
     background-color: rgb(163, 29, 118);
     color: rgb(240, 204, 224);
+}
+
+/* MAİN-CARD */
+
+.main-card {
+    margin: 1rem;
+}
+
+.card {
+    display: flex;
+    padding: 3rem;
+}
+
+.card-img {
+    width: 100%;
+}
+
+@media (max-width: 987px) {
+    .card {
+        flex-wrap: wrap;
+    }
+
+    .card-content {
+        padding: 0;
+    }
+}
+
+.card-content {
+    padding: 1rem 3rem;
+}
+
+
+.card-content button {
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+    font-size: 1rem;
+    background-color: #18ACFE;
+    margin: 2rem .5rem;
+}
+
+.card-content h3 {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+
+}
+
+.card-content button:hover {
+    background-color: white;
+    color: #22678b;
+    font-weight: bolder;
+}
+
+/* FORM */
+
+.form-main {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.form-img {
+    background-image: url(../img/form.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.form-content {
+    width: 50%;
+    background-color: rgb(102, 88, 88);
+}
+
+.form-content h3 {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    color: white;
+    margin: 2rem;
+}
+
+.form-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.5rem 4rem;
+    margin: 1rem 2rem;
+}
+
+.form-content form input {
+    font-size: 1.5rem;
+    padding: 1rem 0.5rem;
+    border: none;
+    background-color: rgb(197, 175, 175);
+    color: white;
+    border-radius: 4rem;
+}
+
+form input:last-child {
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 4rem;
+    font-size: 2rem;
+    background-color: rgb(241, 68, 204);
+
+}
+
+form input:last-child:hover {
+    background-color: rgba(238, 96, 174, 0.623);
+    transform: scale(1.05);
+    color: antiquewhite;
+}
+
+
+/* BOTTOM */
+
+.bottom {
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    text-align: center;
+    color: red;
+    font-size: 1.2rem;
+}
+
+.bottom div {
+    width: 33%;
+}
+
+.bottom h2 {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #d34b4b;
+    height: 15vh;
+    justify-content: center;
+
+}
+
+.footer div p {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.footer-icon ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    padding: .1rem;
+    color: white;
+}
+
+.footer-icon ul li {
+    padding: .1rem;
 }
